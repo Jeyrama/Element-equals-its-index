@@ -16,3 +16,6 @@ Examples:
   input: [-1,0,3,6]
   output: -1 # since no index in array satisfies array[index] == index
 */
+
+
+// Solution
