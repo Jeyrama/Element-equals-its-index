@@ -36,3 +36,5 @@ function indexEqualsValue(a) {
   }
   return neg;
 }
+
+// or
