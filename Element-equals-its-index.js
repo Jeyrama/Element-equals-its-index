@@ -38,3 +38,14 @@ function indexEqualsValue(a) {
 }
 
 // or
+
+function indexEqualsValue(a) {
+  let min = 0
+  let max = a.length - 1
+  while (min < max) {
+      let i = Math.floor((min+max)/2)
+      if (i <= a[i]) max = i
+      else min = i + 1
+  }
+  return a[max] === max ? max : -1
+}
