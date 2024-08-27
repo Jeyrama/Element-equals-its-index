@@ -19,3 +19,20 @@ Examples:
 
 
 // Solution
+
+function indexEqualsValue(a) {
+  let start = 0, end = a.length;
+  let neg = -1;
+  while(start < end){
+    let i = Math.floor((start + end) / 2);
+    if (a[i] > i){
+      end = i;
+    } else if(a[i] < i) {
+      start = i+1;
+    } else {
+      neg = i;
+      end = i;
+    } 
+  }
+  return neg;
+}
